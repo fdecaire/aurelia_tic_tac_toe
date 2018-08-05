@@ -1,0 +1,22 @@
+<template>
+    <h1>${heading}</h1>
+    
+    <table>
+        <tr>
+            <td click.delegate="playerMove($event,0)">${cell0}</td>
+            <td click.delegate="playerMove($event,1)">${cell1}</td>
+            <td click.delegate="playerMove($event,2)">${cell2}</td>
+        </tr>
+        <tr>
+            <td click.delegate="playerMove($event,3)">${cell3}</td>
+            <td click.delegate="playerMove($event,4)">${cell4}</td>
+            <td click.delegate="playerMove($event,5)">${cell5}</td>
+        </tr>
+        <tr>
+            <td click.delegate="playerMove($event,6)">${cell6}</td>
+            <td click.delegate="playerMove($event,7)">${cell7}</td>
+            <td click.delegate="playerMove($event,8)">${cell8}</td>
+        </tr>
+    </table>
+    <span>${winnerMessage}</span>
+</template>
